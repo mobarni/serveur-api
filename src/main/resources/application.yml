@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    dbname: testdb
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        forma_sql: true
+    show-sql: true
+  port: 8080
+  h2:
+    console:
+      enabled: true
